@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jan 08 23:40:16 BRT 2023","Sun Jan 08 23:40:37 BRT 2023","20878","MENU BRASIL","Links do Menu","","","","LOGIN",""
+"failed","Sun Jan 08 23:40:15 BRT 2023","Sun Jan 08 23:40:16 BRT 2023","764","MENU BRASIL","Links do Menu","","","","SUNSET FESTIVAL",""
+"failed","Sun Jan 08 23:43:05 BRT 2023","Sun Jan 08 23:43:32 BRT 2023","26870","PERFIL BRASIL","login/log out","","","","A ferramenta deve realizar o login e logo depois realizar log out",""
+"passed","Sun Jan 08 23:41:51 BRT 2023","Sun Jan 08 23:42:08 BRT 2023","16786","MENU BRASIL","Links do Menu","","","","PEDIDO ZÉ DELIVERY",""
+"passed","Sun Jan 08 23:41:10 BRT 2023","Sun Jan 08 23:41:34 BRT 2023","24450","MENU BRASIL","Links do Menu","","","","HOW TO PARTICIPATE",""
+"passed","Sun Jan 08 23:41:34 BRT 2023","Sun Jan 08 23:41:51 BRT 2023","16786","MENU BRASIL","Links do Menu","","","","PRIZES",""
+"passed","Sun Jan 08 23:40:37 BRT 2023","Sun Jan 08 23:41:10 BRT 2023","32946","MENU BRASIL","Links do Menu","","","","SCAN A CORONA",""
