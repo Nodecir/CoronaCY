@@ -15,7 +15,7 @@
     "allure:report": "allure generate allure-results --clean -o allure-report",
     "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true",
     "Validações-Perfil-allure": "cypress run --browser chrome --spec cypress/e2e/Corona/Validações/Perfil.cy.js --env allure=true",
-    "Validações_Perfil": "cypress run --browser chrome --spec cypress/e2e/Corona/Validações/Perfil.cy.js"
+    "Validar_Footer": "cypress run --browser chrome --spec cypress/e2e/Validações/Footer_BR.cy.js"
   },
   "keywords": [],
   "author": "",
