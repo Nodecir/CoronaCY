@@ -13,14 +13,6 @@ describe('MENU BRASIL', () => {
         }
     })
     describe('Links do Menu', () => {
-        it('SUNSET FESTIVAL', () => {
-            cy.get('#age-gate--yes').click({ force: true })  // Clicar no "SIM" no age gate
-
-            cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
-            cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > .coh-menu-list-item > .coh-link').click({ force: true })
-            cy.get('.nav-logo-column > .coh-container > .coh-link > .coh-image').click({ force: true })
-        })
-
         it('LOGIN', () => {
             cy.get('#age-gate--yes').click({ force: true })  // Clicar no "SIM" no age gate
 
@@ -57,7 +49,7 @@ describe('MENU BRASIL', () => {
             cy.get('#edit-password').type('Teste123')
             cy.get('#edit-submit').click({ force: true })
 
-            cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
+             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(2) > .coh-link').click({ force: true })
             cy.get('.nav-logo-column > .coh-container > .coh-link > .coh-image').click({ force: true })
 
@@ -68,10 +60,6 @@ describe('MENU BRASIL', () => {
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('#age-gate--yes').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(3) > .coh-link').click({ force: true })
-            cy.get('#edit-email').type('rodrigo.ribeiro+brasil1@justdigital.com.br')
-            cy.get('#edit-password').type('Teste123')
-            cy.get('#edit-submit').click({ force: true })
-
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(3) > .coh-link').click({ force: true })
             cy.get('.nav-logo-column > .coh-container > .coh-link > .coh-image').click({ force: true })
@@ -88,6 +76,14 @@ describe('MENU BRASIL', () => {
     
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(4) > .coh-link').click({ force: true })
+            cy.get('.nav-logo-column > .coh-container > .coh-link > .coh-image').click({ force: true })
+        })
+        
+        it('SUNSET FESTIVAL', () => {
+            cy.get('#age-gate--yes').click({ force: true })  // Clicar no "SIM" no age gate
+
+            cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
+            cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(5) > .coh-link').click({ force: true })
             cy.get('.nav-logo-column > .coh-container > .coh-link > .coh-image').click({ force: true })
         })
     })
