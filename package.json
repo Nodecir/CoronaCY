@@ -8,6 +8,10 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress:run",
     
+    "Brazil": "cypress run --spec cypress/e2e/Corona/FooterBR.cy.js",
+    "BrazilFooter": "cypress run --spec cypress/e2e/Corona/Brazil/FooterBR.cy.js",
+    "BrazilMenu": "cypress run --spec cypress/e2e/Corona/Brazil/FooterBR.cy.js",
+
     "ui-regression": "cypress run --browser chrome --spec cypress/e2e/1-getting-started/**.js",
     "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/Corona/**.js --env allure=true",
     "Perfil-allure": "cypress run --browser chrome --spec cypress/e2e/Corona/Perfil.cy.js --env allure=true",

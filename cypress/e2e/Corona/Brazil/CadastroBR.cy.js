@@ -1,9 +1,10 @@
 ///<reference types="cypress"/>
 
-describe("Fazer um cadastro", () => {
+describe("Acessar o menu", () => {
 
     before(() => {
         cy.viewport(1920, 1080)
+        //cy.visit('https://coronacom20230112.abinbev.acsitefactory.com/pt-br/followthesunset')
         cy.visit('https://coronacom.test-abinbev.acsitefactory.com/pt-br/sunsets23')
         cy.wait(500)
     })
@@ -15,7 +16,7 @@ describe("Fazer um cadastro", () => {
     })
 
     describe('Cadastro', () => {
-        it('clicar para rejeitar os cookies e passar pelo age gate HOME', () => {
+        it('Clicar para rejeitar os cookies e passar pelo age gate HOME', () => {
             Cypress.on('uncaught:exception', (err, runnable) => {
                 return false;
               });
@@ -24,7 +25,7 @@ describe("Fazer um cadastro", () => {
             cy.get('#age-gate--yes').click() // Clicar no "SIM" no age gate
             cy.get('.coh-ce-cpt_header_hamburger_button_fwc-e6b7b2b3 > .login-header-link > .ssa-component > .coh-ce-cpt_button-a384e411 > .paragraph-container-horizontal-none > .coh-container > .coh-link').click({force:true})
         })
-        it('clicar abrir cadastro', () => {
+        it('Clicar abrir cadastro', () => {
         cy.get('.sso-login-bottom-actions > .coh-link').click({force:true})
         cy.get('#age-gate--yes').click() // Clicar no "SIM" no age gate
         cy.get('#edit-first-name').type('Felipe')
