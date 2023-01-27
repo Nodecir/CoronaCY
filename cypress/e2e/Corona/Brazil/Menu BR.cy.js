@@ -14,8 +14,9 @@ describe('MENU BRASIL', () => {
     })
     describe('Links do Menu', () => {
         it('LOGIN', () => {
+            cy.get('#onetrust-accept-btn-handler').click({force:true}) 
             cy.get('#age-gate--yes').click({ force: true })  // Clicar no "SIM" no age gate
-            cy.get('#onetrust-reject-all-handler').click({force: true}) // Rejeitar Cookies
+            //cy.get('#onetrust-reject-all-handler').click({force: true}) // Rejeitar Cookies
             cy.get('.coh-ce-cpt_header_hamburger_button_fwc-e6b7b2b3 > .login-header-link > .ssa-component > .coh-ce-cpt_button-a384e411 > .paragraph-container-horizontal-none > .coh-container > .coh-link').click({ force: true })
 
             cy.get('#edit-email').type('rodrigo.ribeiro+brasil1@justdigital.com.br')
@@ -27,7 +28,7 @@ describe('MENU BRASIL', () => {
         })
 
         it('SCAN A CORONA', () => {
-
+            cy.get('#onetrust-accept-btn-handler').click({force:true}) 
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('#age-gate--yes').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(1) > .coh-link').click({ force: true })
@@ -41,7 +42,7 @@ describe('MENU BRASIL', () => {
         })
 
         it('HOW TO PARTICIPATE', () => {
-
+            cy.get('#onetrust-accept-btn-handler').click({force:true}) 
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('#age-gate--yes').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(2) > .coh-link').click({ force: true })
@@ -56,7 +57,7 @@ describe('MENU BRASIL', () => {
         })
 
         it('PRIZES', () => {
-
+            cy.get('#onetrust-accept-btn-handler').click({force:true}) 
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('#age-gate--yes').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(3) > .coh-link').click({ force: true })
@@ -66,7 +67,7 @@ describe('MENU BRASIL', () => {
         })
 
         it('PEDIDO ZÉ DELIVERY', () => {
-
+            cy.get('#onetrust-accept-btn-handler').click({force:true}) 
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('#age-gate--yes').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(4) > .coh-link').click({ force: true })

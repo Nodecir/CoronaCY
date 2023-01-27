@@ -1,9 +1,9 @@
 ////<reference types="cypress"/>
 
-describe("Acessar os links do footer", () => {
+describe("Acessar E-mail do Google", () => {
     before(() => {
         cy.viewport(1920, 1080)
-        cy.visit('https://coronacom20230112.abinbev.acsitefactory.com/pt-br/followthesunset')
+        cy.visit('https://mail.google.com')
         cy.wait(500)
     })
 
@@ -12,10 +12,13 @@ describe("Acessar os links do footer", () => {
             return false
         }
     })
-    describe('Links do Footer', () => {
-        it('Validar Conteúdo da Home Page', () => {
-            cy.get('#onetrust-accept-btn-handler').click({force:true}) 
-            cy.get('.ENJOY').should('contain', 'Beba com moderação. Não compartilhe esse conteúdo com menores de idade.')
+    describe('Login no Google', () => {
+        it('Acessar e-mail do Google', () => {
+            cy.get('#identifierId').type('node.cir@gmail.com') //({force:true}) 
+            cy.get('#identifierNext > .VfPpkd-dgl2Hf-ppHlrf-sM5MNb > .VfPpkd-LgbsSe > .VfPpkd-vQzf8d').click()
+            //cy.get('#identifierNext > .VfPpkd-dgl2Hf-ppHlrf-sM5MNb > .VfPpkd-LgbsSe > .VfPpkd-RLmnJb').click({force:true})
+
+            //.should('contain', 'Beba com moderação. Não compartilhe esse conteúdo com menores de idade.')
           //  cy.get('#age-gate--yes').click({force:true}) // Clicar no "SIM" no age gate
             //cy.get('#onetrust-accept-btn-handler').click({force:true}) 
             // assert the element's text content is exactly the given text

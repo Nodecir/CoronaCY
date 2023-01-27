@@ -7,11 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:run": "cypress:run",
-    
     "Brazil": "cypress run --spec cypress/e2e/Corona/FooterBR.cy.js",
     "BrazilFooter": "cypress run --spec cypress/e2e/Corona/Brazil/FooterBR.cy.js",
     "BrazilMenu": "cypress run --spec cypress/e2e/Corona/Brazil/FooterBR.cy.js",
-
     "ui-regression": "cypress run --browser chrome --spec cypress/e2e/1-getting-started/**.js",
     "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/Corona/**.js --env allure=true",
     "Perfil-allure": "cypress run --browser chrome --spec cypress/e2e/Corona/Perfil.cy.js --env allure=true",
@@ -19,15 +17,18 @@
     "allure:report": "allure generate allure-results --clean -o allure-report",
     "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true",
     "Validações-Perfil-allure": "cypress run --browser chrome --spec cypress/e2e/Corona/Validações/Perfil.cy.js --env allure=true",
-    "Validar-Footer": "cypress run --spec cypress/e2e/Corona/FooterBR.cy.js"
+    "ValidarFooter": "cypress run --spec cypress/e2e/Corona/Brazil/FooterBR.cy.js",
+    "ScanBR": "cypress run --browser chrome --spec cypress/e2e/Corona/Brazil/Scan.cy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.11.0"
+    "cypress": "^10.11.0",
+    "cypress-xpath": "^2.0.1"
   },
   "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
     "@shelex/cypress-allure-plugin": "^2.34.0"
   }
 }
