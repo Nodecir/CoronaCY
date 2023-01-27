@@ -13,8 +13,9 @@ jobs:
       #- name: Cypress run
       - name: ScanBR
         uses: cypress-io/github-action@v4
-        #with:
+        with:
           #record: true 
+          browser: edge
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}         
