@@ -22,6 +22,7 @@ describe("SCAN BRASIL", () => {
             // cy.get('[search="United States inglês US"]').click()
             // cy.wait(500)
             //cy.get('.country-selector-container > .coh-accordion-tabs > .coh-accordion-tabs-inner > .coh-accordion-tabs-content-wrapper > .coh-accordion-title').click()
+            cy.wait(6500)
             cy.get('#age-gate--yes').click() // Clicar no "SIM" no age gate
             cy.get('.coh-col-xs-3 > .coh-container > .coh-button').click({ force: true })
             cy.get('.bgc-not-diff > .coh-container > .coh-menu-list-container > :nth-child(1) > .coh-link').click({ force: true })
